@@ -84,7 +84,11 @@
             return this.ints.filter((int, idx) => idx % n === 0)
         }
         getAllReversed() {
-            return this.ints.toReversed()
+            let newInts = []
+            for (let idx = this.ints.length-1; idx >= 0; idx--) {
+                newInts.push(this.ints[idx])
+            }
+            return newInts
         }
     }
 
